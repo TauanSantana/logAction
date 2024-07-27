@@ -1,0 +1,15 @@
+name: Log Step
+description: Demonstrate how to use reusable steps in a workflow
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Step Name1
+      id: process-step
+      shell: bash 
+      run: |
+        echo "Log step - V1"
+    - name: Step Name2
+      shell: bash 
+      run: |
+        echo "Log Step: $(hostname)"
