@@ -8,7 +8,7 @@ runs:
       id: process-step
       shell: bash 
       run: |
-        echo "Log step - V1"
+        echo "Log step - V2"
     - name: Step Name2
       shell: bash 
       run: |
